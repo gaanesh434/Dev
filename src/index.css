@@ -3,23 +3,36 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: blue;
 }
 
 .logoo {
   width: 45%;
 }
 
-.search-box input {
-  border-radius: 15px;
-  border: 5px solid rgb(70, 64, 64);
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
 
+.search-box input {
+  border: none;
+  outline: none;
+  color: antiquewhite;
+  font-size: 18px;
+  max-width: 200px;
+  background-color: #333;
+  padding-left: 30px;
+  border-radius: 15px;
+  height: 100%;
 }
 
 .navbar ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .navbar ul li {
@@ -27,4 +40,19 @@
   border: 10px 12px;
   margin: 45px;
   gap: 20px;
+}
+
+.search-icon {
+  max-width: 20px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dark {
+  max-width: 90px;
+  width: 70px;
+  padding-right: 25px;
+
 }
